@@ -1,19 +1,16 @@
+function sumar(a: number, b: number): number {
 
-let habilidades: string[] = ['Bash', ' Counter', 'Healing'];
-
-interface Personaje {
-    nombre:string;
-    hp: number;
-    habilidades: string[];
-    puebloNatal?: string;
+    return a + b;
 }
 
-const personaje: Personaje = {
-    nombre:'Strider',
-    hp: 100,
-    habilidades: [ 'Bash', 'Counter', 'Healing']
-
+const sumarFlecha = (a: number ,b: number ): number => {
+    return a + b;
 }
-personaje.puebloNatal = 'Pueblo paleta'
 
-console.table( personaje );
+function multiplicar(numero: number, otroNumero?: number, base: number = 5): number {
+    return  numero * base;
+}
+
+const resultado = multiplicar(10, 20, 15);
+
+console.log(resultado);
